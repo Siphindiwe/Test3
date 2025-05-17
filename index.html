@@ -7,12 +7,20 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div id="start-screen">
-      <h2>Select a Topic</h2>
-      <select id="topic-select">
-        <option value="">-- Choose a Topic --</option>
-      </select>
-      <button id="start-btn">Start Quiz</button>
+    <div id="start-screen" class="quiz-container">
+      <h1 class="quiz-title">Tech Whiz Quiz</h1>
+      <h2 class="quiz-subtitle">Choose a Category</h2>
+      <div class="category-buttons">
+        <button class="category-btn" data-topic="javascript">
+          Web Development
+        </button>
+        <button class="category-btn" data-topic="htmlcss">
+          Computer Fundamentals
+        </button>
+        <button class="category-btn" data-topic="git">
+          Programming Concepts
+        </button>
+      </div>
     </div>
 
     <div id="quiz-container" style="display: none">
