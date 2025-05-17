@@ -27,12 +27,14 @@ body {
   font-size: 32px;
   font-weight: 700;
   color: #1d2d44;
+  text-align: center;
 }
 
 .quiz-subtitle {
   font-size: 20px;
   color: #1a73e8;
   margin: 10px 0 20px;
+  text-align: center;
 }
 
 .question-info,
@@ -50,6 +52,7 @@ body {
   font-size: 18px;
   margin-bottom: 20px;
   color: #333;
+  text-align: center;
 }
 
 .options {
@@ -59,6 +62,21 @@ body {
   justify-content: center;
 }
 
+.option-btn {
+  flex: 1 1 45%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #e4e8ec;
+  color: #333;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.option-btn:hover {
+  background-color: #d0d6dd;
+}
 .next-btn {
   margin-top: 20px;
   padding: 12px 20px;
@@ -74,37 +92,4 @@ body {
 .next-btn:disabled {
   background-color: #9bbdf2;
   cursor: not-allowed;
-}
-.option-btn {
-  display: block;
-  margin: 10px auto;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 8px;
-  background-color: #e0e0e0;
-  color: #333;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  max-width: 500px;
-  width: 90%;
-  text-align: center;
-}
-
-.option-btn:hover {
-  background-color: #d4d4d4;
-}
-#start-screen {
-  margin-bottom: 20px;
-  padding: 15px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  background-color: #f8f8f8;
-}
-
-#topic-select,
-#start-btn {
-  padding: 10px;
-  font-size: 16px;
-  margin-top: 10px;
 }
